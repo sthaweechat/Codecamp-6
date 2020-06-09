@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Review Css</title>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+
+    <style class="style/css">
+        p {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>CSS Review</h1>
+<table class="my_table">
+    <thead>
+        <tr>
+            <th>โจทย์</th>
+            <th>คำตอบ</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                1. CSS Syntax ประด้วยอะไรบ้าง ?
+            </td>
+            <td>
+                1.selector คือส่วน html tag เช่น p <br>
+                2.declaration คือส่วนประกาศลักษณะ<br>
+                2.1.property คือส่วนคุณสมบัติ เช่น color<br>
+                2.2.value คือค่าที่กำหนด เช่น red <br>
+             <img src="assets/img/syntax.png" width="150px">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2. การเขียน CSS มีกี่แบบ อะไรบ้าง ?  
+            </td>
+            <td>
+                External CSS คือ การนำไฟล์ css เข้าจากภายนอก<br>
+                <img src="assets/img/external.png" width="150px"><br>
+                Internal CSS คือ การเขียนภายใน หน้า HTML<br>
+                <img src="assets/img/internal.png" width="150px"><br>
+                Inline CSS คือ การเขียนภายใน tah html<br>
+                <img src="assets/img/inline.png" width="150px"><br>
+            </td>
+    
+        </tr>
+        <tr>
+            <td>
+                3. selector มีกี่แบบ อะไรบ้าง ?
+            </td>
+                    <td>
+                1. Class Selectors <br>
+                Class Selectors เป็น Selector ที่เราต้องกำหนดชื่อของ Selector ขึ้นมาเอง โดย Class Selector การเรียกใช้งานต้องระบุชื่อ Class Selectors ให้กับ Tag ของ HTML จึงจะสามารถใช้งานคุณสมบัติของ Class ที่ได้สร้างไว้ได้<br>
+                <img src="assets/img/class.png" width="150px"><br>
+                2. ID Selectors<br>
+                ID Selectors เป็น Selector ที่อ้างอิงกับ Attribute ที่ชื่อว่า ID ซึ่งเขียนอยู่ภายใน Tag ของ HTML โดยที่ Tag ของ HTML ใดมี ID ซึ่งตรงกับ ID Selectors ที่กำหนด คุณสมบัติของ CSS ที่กำหนดไว้กับ Selector ก็จะมีผลต่อ Tag นั้น<br>
+                <img src="assets/img/id.png" width="150px"><br>
+                3. TAG Selectors<br>
+                TAG Selectors สำหรับ Selector ในรูปแบบสุดท้ายที่จะกล่าวถึงในเบื้องต้นนี้เป็น Selector ที่อ้างอิงกับชื่อ Tag ของ HTML โดยตรง  นั่นหมายความว่า ถ้าหากกำหนดคุณสมบัติให้แก่ TAG Selectors นี้แล้ว Tag ของ HTML ที่มีชื่อเดียวกับ Selectors นี้็จะมีคุณสมบัติของ CSS เหมือนกันหมดทุก Tag ภายในเว็บเพจนั้น<br>
+                <img src="assets/img/tag.png" width="150px"><br>
+                </td>
+    
+        </tr>
+        <tr>
+            <td>
+                4. combinator มีกี่แบบ อะไรบ้าง ?
+            </td>
+            <td>
+                1.Descendant selector (space) : div p = tag p ทั้งหมดที่อยู่ใน div<br>
+                <img src="assets/img/descendant.png" width="150px"><br>
+                2.Child selector (>) : div > p = tag p ที่เป็นลูกของ div<br>
+                 <img src="assets/img/child.png" width="150px"><br>
+                3.Adjacent sibling selector (+) : div + p = tag p ที่อยู่ล่าง div และติดกับ div เท่านั้น<br>
+                 <img src="assets/img/adjacent.png" width="150px"><br>
+                4.General sibling selector (~) : div ~ p = tag p ที่อยู่ล่าง div ทุก tag<br>
+                <img src="assets/img/general.png" width="150px"><br>
+            </td>
+        </tr>
+         <tr>
+            <td>
+               5. CSS Property และ CSS Value คืออะไร แตกต่างกันอย่างไร
+            </td>
+            <td>
+                Css Property เป็นตัวประกาศลักษณะ
+                ส่วน Css Value เป็นค่าที่กำหนดลักษณะ
+                เช่น P color red 
+                แท๊ก p ประกาศลักษณะ สี กำหนดให้เป็น แดง
+            </td>
+        </tr>
+        <tr>
+            <td>
+               6. property ที่สอนใน precamp มีกี่กลุ่มอะไรบ้าง
+            </td>
+            <td>
+                10 กลุ่ม <br>
+                Background<br>
+                Color<br>
+                Font <br>
+                Border<br>
+                Content<br>
+                Grid<br>
+                Margin<br>
+                Padding<br>
+                Positioning<br>
+                Table<br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               7.value unit มีกี่ประเภทอะไรบ้างแต่ละ ประเภทคืออะไร
+            </td>
+            <td>
+                Absolute Lengths เช่น px,cm,mm,q,in,pc,pt<br>
+                Relative Lengths เช่น cap,ch,em,ex,ic,lh,rem,rlh
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
