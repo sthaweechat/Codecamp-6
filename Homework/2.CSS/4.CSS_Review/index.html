@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Review Css</title>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+
+    <style class="style/css">
+        p {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>CSS Review</h1>
+<table class="my_table">
+    <thead>
+        <tr>
+            <th>โจทย์</th>
+            <th>คำตอบ</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+               8.value ใน display property มีอะไรบ้าง
+            </td>
+               none, inline, block, inline-block, grid, flex
+            </none,>
+        </tr>
+         <tr>
+            <td>
+               9. grid และ flex แตกต่างกันอย่างไร
+            </td>
+            <td>
+             Flex ใช้เพื่อจัดการ layout 1D ส่วน Grid ใช้เพื่อจัดการ layout 2D<br>
+             Flex เราสามารถจัดวางของต่างๆภายใน layout 1 แถว อาจจะเป็นแนวตั้งหรือแนวนอน<br>
+             Grid เราสามารถจัดของไว้ตรงไหนก็ได้ใน grid layout เช่นตัวอย่าง เราบอก grid ว่าให้ layout ของ header เต็ม row บรรทัดต่อมาให้ menu เป็น 2 columns content เป็น 8 columns อะไรประมาณนั้น<br>
+             ใช้ flex เมื่อ layout มีลักษณะการวางของต่างๆเป็นแถวเดียว ไม่แนวตั้งก็นอน (1D)<br>
+             ใช้ grid เมื่อ items ด้านในเรามีการจัดเรียงตัวที่ไม่ได้มีแค่แถวเดียว แต่มีลักษณะเป็น column กับ row (2D)
+            </td>
+        </tr>
+        <tr>
+            <td>
+               10. justify and align แตกต่างกันอย่างไร
+            </td>
+            <td>
+               justify เป็นการกระจาย ส่วน align เป็นการจัดการเช่น ซ้าย ขวา เป็นต้น
+            </td>
+        </tr>
+        <tr>
+            <td>
+               11.position คืออะไร และ อะไรบ้าง
+            </td>
+            <td>
+                position คือ ตำแหน่งการจัดวางของ css ประกอบไปด้วย<br>
+                static<br>
+                relative<br>
+                absolute<br>
+                fixed<br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               12.z-index คืออะไรใช้อย่างไร
+            </td>
+            <td>
+               คือการใช้จัดเรียง elementที่ซ้อนกันและต้องเป็น element ที่ถูกกำหนด position ไว้เท่านั้น เช่น z-index=1;
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
