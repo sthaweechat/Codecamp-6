@@ -40,9 +40,6 @@
     border: 1px solid black;
 }
 
-.bot{
-
-}
 @media screen and (max-width: 768px) {
     .column {
         font-size: 1em;
