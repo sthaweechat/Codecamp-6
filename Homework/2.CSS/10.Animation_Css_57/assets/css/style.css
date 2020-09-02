@@ -1,0 +1,59 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.row {
+    width: 100%;
+    height: 150px;
+}
+.meter {
+    height: 5px;
+    position: relative;
+    background: #f3efe6;
+    overflow: hidden;
+}
+
+.meter span {
+    display: block;
+    height: 100%;
+}
+
+/* name timing-function duration deley count*/
+.normal {
+    animation: normalBar ease 5s 3s infinite;
+    visibility: hidden;
+    color: black;
+}
+@keyframes normalBar {
+    0% {
+        width: 0;
+        background-color: rgb(255, 0, 0);
+        visibility: visible;
+    }
+
+    25% {
+        background-color: rgb(250, 112, 0);
+        width: 25%;
+        visibility: visible;
+    }
+
+    50% {
+        background-color: rgb(253, 173, 0);
+        width: 50%;
+        visibility: visible;
+    }
+
+    75% {
+        background-color: rgb(255, 238, 0);
+        width: 75%;
+        visibility: visible;
+    }
+
+    100% {
+        background-color: rgb(145, 255, 0);
+        width: 100%;
+        visibility: hidden;
+    }
+}
