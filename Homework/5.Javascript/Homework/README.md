@@ -2,7 +2,7 @@ CodeCamp # 6
 
 Suriya Thaweechat
 
-Javascript
+Javascript Homework
 
 // 1. จงคำนวณค่าด้านล่างต่อไปนี้ และ คอมเม้นตอบหลังคำถาม
 5 + "34"            // 534  
