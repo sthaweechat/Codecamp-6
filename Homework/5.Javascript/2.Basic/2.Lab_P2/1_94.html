@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    คำสั่ง alert ไหนที่จะถูกรันบ้าง<br>
+
+    if (-1 || 0) alert( 'first' ); // run<br>
+    if (-1 && 0) alert( 'second' ); //no<br>
+    if (null || -1 && 0) alert( 'third' ); //no<br>
+
+</body>
+<script>
+    if (-1 || 0) alert( 'first' );
+    if (-1 && 0) alert( 'second' );
+    if (null || -1 && 0) alert( 'third' );
+</script>
+
+</html>
