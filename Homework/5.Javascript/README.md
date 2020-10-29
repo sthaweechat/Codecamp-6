@@ -2,4 +2,4 @@ CodeCamp # 6
 
 Suriya Thaweechat
 
-Javascript
+Javascript Advance
