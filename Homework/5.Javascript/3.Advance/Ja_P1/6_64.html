@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    ให้ Object ชื่อ ladder มี
+    method ขึ้น และ ลง
+    let ladder = {
+    step: 0,
+    up() {
+    this.step++;
+    },
+    down() {
+    this.step--;
+    },
+    showStep: function() { // shows the current step
+    alert( this.step );
+    }
+    };
+
+
+</body>
+<script>
+    let ladder = {
+        step: 0,
+        up() {
+            this.step++;
+            return this;
+        },
+        down() {
+            this.step--;
+            return this;
+        },
+        showStep: function () { // shows the current step
+            alert(this.step);
+            return this;
+        }
+    };
+</script>
+
+</html>

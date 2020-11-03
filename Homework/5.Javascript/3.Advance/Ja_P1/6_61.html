@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    การทำงานของ code ดังกล่าวจะได้อะไรออกมา
+    let user = {
+    name: "John",
+    go: function() { alert(this.name) }
+    }
+
+    (user.go)()
+
+    <br>ตอบ 
+    6_61.html:64 Uncaught ReferenceError: Cannot access 'user' before initialization
+
+</body>
+<script>
+let user = {
+  name: "John",
+  go: function() { alert(this.name) }
+}
+
+(user.go)()
+</script>
+
+</html>

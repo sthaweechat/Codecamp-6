@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    จงเขียนฟังก์ชัน multiplyNumeric(obj, times) โดยถ้า properties นั้นมี value เป็น number ให้คุณ value นั้นด้วย times
+    ถ้าข้อมูลเเป็นอย่างอื่นไม่ต้องทำอะไร
+</body>
+<script>
+    function multiplayNumberic(obj, times) {
+        for (let key in obj) {
+            // if(typeof obj[key] == "number"){
+            //     obj[key] *= times
+            // }
+            //ถ้าไม่เท่ากับตัวเลข ให้ทำต่อไป ถ้าเท่ากับตัวเลขค่อยมาคูณ
+            if (typeof obj[key] !== "number") continue
+            obj[key] *= times
+        }
+    }
+</script>
+
+</html>
