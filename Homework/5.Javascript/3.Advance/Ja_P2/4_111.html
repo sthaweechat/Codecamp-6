@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    array1 = [
+    { name: "apple", birth: "2000-01-01" },
+    { name: "banana", birth: "1990-10-01" },
+    { name: "watermelon", birth: "1985-12-01" },
+    ]
+    array2 [
+    { name: "apple", birth: "2000-01-01", age: 19 },
+    { name: "banana", birth: "1990-10-01", age: 29 },
+    { name: "watermelon", birth: "1985-12-01", age: 33 },
+
+
+
+</body>
+<script>
+    let array1 = [{
+            name: "apple",
+            birth: "2000-01-01"
+        },
+        {
+            name: "banana",
+            birth: "1990-10-01"
+        },
+        {
+            name: "watermelon",
+            birth: "1985-12-01"
+        },
+    ]
+    let array2 = array1.map((item) => {
+        item.age = 2020 - item.birth.split("-")[0];
+        return item;
+    })
+</script>
+
+</html>
