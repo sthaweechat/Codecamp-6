@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    เราได้ array จาก map.keys() แต่ไม่สามารถใช้ push ได้
+    เราจะทำยังไงให้ keys.push สามารถทำงานได้
+
+</body>
+<script>
+    let map = new Map();
+
+    map.set("name", "John");
+
+    let keys = map.keys();
+    keys = Array.from(keys);
+    // Error: keys.push is not a function
+    keys.push("more");
+    // console.log(keys);
+</script>
+
+</html>

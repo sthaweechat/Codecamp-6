@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    ให้ arr เป็น Array
+    สร้าง function ชื่อ unique(arr) ให้คืนค่าเป็น unique items ของ arr
+
+</body>
+<script>
+    function unique(arr) {
+        let valueSet = new Set(arr);
+
+        return Array.from(valueSet);
+    }
+    let values = ["Hare", "Krishna", "Hare", "Krishna", "Krishna", "Krishna", "Hare", "Hare", ":-O"];
+    alert(unique(values));
+    // console.log(unique(values));
+</script>
+
+</html>
